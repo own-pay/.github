@@ -1,36 +1,33 @@
-# OwnPay 
-**The premier self-hosted, open-source payment gateway automation platform.**
-
-[![GitHub stars](https://img.shields.io/github/stars/own-pay/OwnPay?style=for-the-badge&color=24292e&logo=github)](https://github.com/own-pay/OwnPay)
-[![License](https://img.shields.io/github/license/own-pay/OwnPay?style=for-the-badge&color=24292e)](LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/own-pay/OwnPay?style=for-the-badge&color=24292e)](https://github.com/own-pay/OwnPay/issues)
-
-## Overview
-
-OwnPay empowers developers and businesses to take full control of their payment infrastructure. By self-hosting your payment gateway, you ensure data privacy, eliminate transaction fees from intermediaries, and customize the experience to your needs.
-
-## Key Features
-
-- Self-Hosted: Your data, your server, your rules.
-- Forever Free: Open-source core that will always be free.
-- Developer-First: Comprehensive APIs and easy automation.
-- High Performance: Built for speed and reliability.
-- Secure: Privacy-focused architecture.
-
-## Tech Stack
-
-- Backend: Node.js / Express
-- Frontend: Next.js / React
-- Database: PostgreSQL
-- DevOps: Docker / Kubernetes
-
-## Getting Started
-
-Explore our repositories to start your journey:
-
-- [Main Repository](https://github.com/own-pay/OwnPay)
-- [Documentation](https://ownpay.org/docs)
+<div align="center">
+  <img src="https://via.placeholder.com/120x120.png?text=Own+Pay+Logo" width="120" alt="Own Pay Logo"/>
+  
+  # Own Pay
+  
+  **Self-hosted, open-source payment gateway automation**
+  
+  *Built by the Community, for the Community.*
+  
+  [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL_3.0-blue.svg)](https://opensource.org/licenses/AGPL-3.0)
+  [![GitHub Stars](https://img.shields.io/github/stars/own-pay/OwnPay?style=social)](https://github.com/own-pay/OwnPay)
+  
+</div>
 
 ---
 
-Built with Love by the OwnPay Team
+## 🌟 What is Own Pay?
+
+Self-hosted, open-source payment gateway automation platform. Manage brands, gateways, and transactions securely on your own infrastructure.
+
+## 🚀 Get Started
+
+[Quick Start Guide](https://github.com/own-pay/OwnPay)
+
+## 🤝 Contributing
+
+We welcome contributors of all skill levels. See our [Contributing Guide](https://github.com/own-pay/OwnPay/blob/main/CONTRIBUTING.md).
+
+## 📦 Our Projects
+
+| Repository | Description | Status |
+|---|---|---|
+| [OwnPay](https://github.com/own-pay/OwnPay) | Core platform | [![Active](https://img.shields.io/badge/status-active-brightgreen)]() |

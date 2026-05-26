@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://via.placeholder.com/120x120.png?text=Own+Pay+Logo" width="120" alt="Own Pay Logo"/>
+  <img src="https://github.com/own-pay/.github/blob/main/profile/assets/logo-png.png" width="120" alt="Own Pay Logo"/>
   
   # Own Pay
   

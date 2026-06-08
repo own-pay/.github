@@ -2,9 +2,9 @@
 
 <!--  LOGO — auto light/dark based on GitHub theme  -->
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github.com/own-pay/.github/raw/main/profile/assets/logo-dark.png">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://github.com/own-pay/.github/blob/main/profile/assets/logo-png.png">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/own-pay/.github/raw/main/profile/assets/logo-light.png">
-  <img src="https://github.com/own-pay/.github/raw/main/profile/assets/logo-png.png" height="90" alt="OwnPay" />
+  <img src="https://github.com/own-pay/.github/blob/main/profile/assets/logo-png.png" height="90" alt="OwnPay" />
 </picture>
 
 <br /><br />

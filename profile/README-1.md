@@ -34,7 +34,8 @@
 
 <div align="center">
 
-[![ELITE SPONSOR](https://img.shields.io/badge/%E2%9A%A1%20ELITE%20SPONSOR-FFB800?style=flat-square&labelColor=111111)](https://namepart.com) &nbsp; <a href="https://namepart.com"><img src="https://ownpay.org/assets/img/sponsors/namepart_logo.png" height="22" alt="Namepart" /></a> &nbsp; **[Namepart](https://namepart.com)** — Powering open-source fintech infrastructure. &nbsp; <sub>[Become a Sponsor →](mailto:ping@ownpay.org)</sub>
+![ELITE SPONSOR](https://img.shields.io/badge/%E2%9A%A1%20ELITE%20SPONSOR-FFB800?style=flat-square&labelColor=111111) &nbsp; <br />
+<a href="https://namepart.com"><img src="https://ownpay.org/assets/img/sponsors/namepart_logo.png" height="22" alt="Namepart" /></a> &nbsp; **[Namepart](https://namepart.com)** — Powering open-source fintech infrastructure. &nbsp; <br /><sub>[Become a Sponsor →](https://ownpay.org/donate)</sub>
 
 </div>
 
@@ -121,11 +122,12 @@
 ---
 
 <!--  ARCHITECTURE  -->
-
 ## 🏗️ Technical Architecture
 
 <div align="center">
+
 <img src="https://skillicons.dev/icons?i=php,mysql,nginx,linux,git,github&theme=dark&perline=6" height="46" alt="Tech Stack" />
+
 </div>
 
 <br />
@@ -133,24 +135,33 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-<b>⚙️ Core Stack</b><br /><br />
-<b>Language</b> &nbsp;→&nbsp; PHP 8.2+ · Strict Typing<br />
-<b>Database</b> &nbsp;→&nbsp; MySQL / MariaDB<br />
-<b>Architecture</b> &nbsp;→&nbsp; Custom Enterprise Framework<br />
-<b>Pattern</b> &nbsp;→&nbsp; Service-Oriented Architecture (SOA)<br />
-<b>Hosting</b> &nbsp;→&nbsp; Shared · VPS · Dedicated
+
+**⚙️ Core Stack**
+
+| Component | Technology |
+|:---|:---|
+| Language | PHP 8.2+ &nbsp;·&nbsp; Strict Typing |
+| Database | MySQL / MariaDB |
+| Architecture | Custom Enterprise Framework |
+| Pattern | Service-Oriented Architecture (SOA) |
+| Hosting | Shared · VPS · Dedicated |
+
 </td>
 <td width="50%" valign="top">
-<b>🔐 Security &amp; Innovation</b><br /><br />
-<b>Plugin Engine</b> &nbsp;→&nbsp; Universal ZIP-based Modules<br />
-<b>Hook System</b> &nbsp;→&nbsp; <code>{domain}.{entity}.{event}</code><br />
-<b>Security Model</b> &nbsp;→&nbsp; Zero-Trust Plugin Matrix<br />
-<b>Config Storage</b> &nbsp;→&nbsp; Encrypted at Rest<br />
-<b>Code Quality</b> &nbsp;→&nbsp; PSR-compliant · PHPStan L9
+
+**🔐 Security & Innovation**
+
+| Feature | Description |
+|:---|:---|
+| Plugin Engine | Universal ZIP-based Modules |
+| Hook System | `{domain}.{entity}.{event}` |
+| Security Model | Zero-Trust Plugin Matrix |
+| Config Storage | Encrypted at Rest |
+| Code Quality | PSR-compliant &nbsp;·&nbsp; PHPStan L9 |
+
 </td>
 </tr>
 </table>
-
 ---
 
 <!--  ECOSYSTEM  -->
@@ -309,7 +320,7 @@ Released under the
 
 <br /><br />
 
-<sub><b>Built by the Community, for the Community. 🌍</b></sub>
+<sub>Built by the <b>Community</b>, for the <b>Community</b>. 🌍</sub>
 
 <br />
 

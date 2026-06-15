@@ -8,7 +8,7 @@
 
 <br /><br />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2800&pause=1000&color=0066FF&center=true&vCenter=true&width=680&lines=Your+Gateway.+Your+Server.+Your+Rules.;Self-Hosted+Payment+Infrastructure.;Open+Source+%E2%80%A2+Forever+Free+%E2%80%A2+Developer-First.;120%2B+Gateways+%E2%80%A2+Multi-Brand+%E2%80%A2+Zero+Middlemen.)](https://ownpay.org)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2800&pause=1000&color=0066FF&center=true&vCenter=true&width=680&lines=Your+Gateway.+Your+Server.+Your+Rules.;Self-Hosted+Payment+Infrastructure.;Open+Source+%E2%80%A2+Forever+Free+%E2%80%A2+Developer-First.;White-Label+%E2%80%A2+120%2B+Gateways+%E2%80%A2+Multi-Brand.)](https://ownpay.org)
 
 <br />
 
@@ -32,7 +32,7 @@
 
 **OwnPay** is an open-source organization building **self-hosted payment infrastructure** — giving developers, merchants, and businesses complete ownership of their financial stack.
 
-We believe payment infrastructure should be transparent, auditable, and yours. No vendor lock-in. No third-party access to your data. No recurring SaaS fees for the platform itself. Just clean, secure, open-source software that runs on your server and answers to you.
+We pioneered the **world's first self-hosted white-label custom-domain checkout architecture**: one server, multiple brands, each on its own domain, logo, and color scheme — customers see your brand, never OwnPay. We believe payment infrastructure should be transparent, auditable, and yours. No vendor lock-in. No third-party access to your data. No recurring SaaS fees.
 
 > **Your payment gateway. Your server. Your data. Your rules — forever.**
 
@@ -45,7 +45,7 @@ We believe payment infrastructure should be transparent, auditable, and yours. N
 <td width="50%" valign="top">
 
 ### ⚙️ [OwnPay Core](https://github.com/own-pay/OwnPay)
-The flagship platform. A self-hosted payment orchestrator with 120+ gateway integrations, multi-brand isolation, a double-entry ledger engine, a sandboxed plugin system, REST APIs, and a signed self-update engine — all in a dependency-minimal PHP 8.3+ core.
+The flagship platform. A self-hosted payment orchestrator with 120+ gateway integrations, the **industry's first white-label custom-domain checkout** (one install → unlimited brands, each on its own domain), a double-entry ledger engine, a sandboxed plugin system, REST APIs, and a signed self-update engine — all in a dependency-minimal PHP 8.3+ core.
 
 </td>
 <td width="50%" valign="top">
@@ -209,7 +209,7 @@ OwnPay is built by contributors from around the world. Every bug report, transla
 
 <br />
 
-<a href="https://hostever.com"><img src="https://ownpay.org/assets/img/sponsors/hostever.png" height="28" alt="Hostever" /></a>&nbsp;&nbsp;&nbsp;
+<a href="https://hostever.com"><img src="https://www.hostever.com/storage/2022/07/hostever-logo-black-white.svg" height="28" alt="Hostever" /></a>&nbsp;&nbsp;&nbsp;
 <a href="https://www.flexohost.com"><img src="https://ownpay.org/assets/img/sponsors/FlexoHost_logo.webp" height="28" alt="FlexoHost" /></a>&nbsp;&nbsp;&nbsp;
 <a href="https://hostazy.com.bd"><img src="https://ownpay.org/assets/img/sponsors/hostazy.png" height="28" alt="Hostazy" /></a>&nbsp;&nbsp;&nbsp;
 <a href="https://banglahoster.net"><img src="https://ownpay.org/assets/img/sponsors/banglahoster.svg" height="28" alt="Bangla Hoster" /></a>&nbsp;&nbsp;&nbsp;

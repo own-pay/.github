@@ -209,7 +209,7 @@ OwnPay is built by contributors from around the world. Every bug report, transla
 
 <br />
 
-<a href="https://hostever.com"><img src="https://www.hostever.com/storage/2022/07/hostever-logo-black-white.svg" height="28" alt="Hostever" /></a>&nbsp;&nbsp;&nbsp;
+<a href="https://hostever.com"><img src="https://ownpay.org/assets/img/sponsors/hostever.png" height="28" alt="Hostever" /></a>&nbsp;&nbsp;&nbsp;
 <a href="https://www.flexohost.com"><img src="https://ownpay.org/assets/img/sponsors/FlexoHost_logo.webp" height="28" alt="FlexoHost" /></a>&nbsp;&nbsp;&nbsp;
 <a href="https://hostazy.com.bd"><img src="https://ownpay.org/assets/img/sponsors/hostazy.png" height="28" alt="Hostazy" /></a>&nbsp;&nbsp;&nbsp;
 <a href="https://banglahoster.net"><img src="https://ownpay.org/assets/img/sponsors/banglahoster.svg" height="28" alt="Bangla Hoster" /></a>&nbsp;&nbsp;&nbsp;
@@ -230,7 +230,7 @@ OwnPay is built by contributors from around the world. Every bug report, transla
 <a href="https://ownpay.org">ownpay.org</a> &nbsp;·&nbsp;
 <a href="https://docs.ownpay.org">docs</a> &nbsp;·&nbsp;
 <a href="https://learn.ownpay.org">learn</a> &nbsp;·&nbsp;
-<a href="https://plugin.ownpay.org">plugins</a> &nbsp;·&nbsp;
+<a href="https://plugins.ownpay.org">plugins</a> &nbsp;·&nbsp;
 <a href="https://blog.ownpay.org">blog</a> &nbsp;·&nbsp;
 <a href="https://demo.ownpay.org">demo</a> &nbsp;·&nbsp;
 <a href="mailto:ping@ownpay.org">ping@ownpay.org</a>

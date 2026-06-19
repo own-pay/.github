@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github.com/own-pay/.github/raw/main/profile/assets/ownpay-with-bg.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/own-pay/.github/raw/main/profile/assets/logo-png.png">
-  <img src="https://github.com/own-pay/.github/raw/main/profile/assets/ownpay-with-bg.png" height="110" alt="OwnPay" />
+  <source media="(prefers-color-scheme: dark)"  srcset="https://github.com/own-pay/.github/raw/main/profile/assets/ownpay-white-logo.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/own-pay/.github/raw/main/profile/assets/ownpay-dark-logo.svg">
+  <img src="https://github.com/own-pay/.github/raw/main/profile/assets/ownpay-with-bg.png" height="100" alt="OwnPayLogo" />
 </picture>
 
 <br /><br />
@@ -50,8 +50,8 @@ The flagship platform. A self-hosted payment orchestrator with 120+ gateway inte
 </td>
 <td width="50%" valign="top">
 
-### 🧩 Plugin Ecosystem
-A growing marketplace of payment gateway adapters and add-ons — covering global cards, mobile financial services (MFS), regional banks, and crypto. Browse and install at **[plugin.ownpay.org](https://plugin.ownpay.org)**.
+### 🧩 [Plugin Ecosystem](https://plugins.ownpay.org)
+A plugins directory of payment gateway adapters and add-ons — covering global cards, mobile financial services (MFS), regional banks, and crypto. Browse and install at **[plugins.ownpay.org](https://plugins.ownpay.org)**.
 
 </td>
 </tr>

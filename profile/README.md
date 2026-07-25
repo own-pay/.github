@@ -65,7 +65,7 @@ A Flutter-based companion app for merchants — device pairing, JWT auth, real-t
 <td width="50%" valign="top">
 
 ### 📚 Docs & Learning Hub
-The full REST API reference lives at **[docs.ownpay.org](https://docs.ownpay.org)**. Step-by-step guides — gateway development, deployment, integration tutorials, and more — are at **[learn.ownpay.org](https://learn.ownpay.org)**.
+The full REST API reference lives at **[docs.ownpay.org](https://docs.ownpay.org)**. Step-by-step guides — gateway development, deployment, integration tutorials, and more — are at **[ownpay.org/docs](https://ownpay.org/docs)**.
 
 </td>
 </tr>
@@ -140,7 +140,7 @@ No heavyweight framework. A small, readable, first-party core — because you sh
 |:---:|:---|:---|
 | 🌐 | **[ownpay.org](https://ownpay.org)** | Product overview & download |
 | 📖 | **[docs.ownpay.org](https://docs.ownpay.org)** | REST API reference (merchant, mobile, admin) |
-| 🎓 | **[learn.ownpay.org](https://learn.ownpay.org)** | Tutorials, deployment guides, gateway development |
+| 🎓 | **[ownpay.org/docs](https://ownpay.org/docs)** | Tutorials, deployment guides, gateway development |
 | 🧩 | **[plugin.ownpay.org](https://plugin.ownpay.org)** | Gateway & add-on catalog |
 | 📰 | **[blog.ownpay.org](https://blog.ownpay.org)** | Releases, changelog & announcements |
 | ▶️ | **[demo.ownpay.org](https://demo.ownpay.org)** | Live demo — try it without installing |
@@ -229,7 +229,7 @@ OwnPay is built by contributors from around the world. Every bug report, transla
 <sub>
 <a href="https://ownpay.org">ownpay.org</a> &nbsp;·&nbsp;
 <a href="https://docs.ownpay.org">docs</a> &nbsp;·&nbsp;
-<a href="https://learn.ownpay.org">learn</a> &nbsp;·&nbsp;
+<a href="https://ownpay.org/docs">Documentations</a> &nbsp;·&nbsp;
 <a href="https://plugins.ownpay.org">plugins</a> &nbsp;·&nbsp;
 <a href="https://blog.ownpay.org">blog</a> &nbsp;·&nbsp;
 <a href="https://demo.ownpay.org">demo</a> &nbsp;·&nbsp;

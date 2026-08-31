@@ -34,7 +34,7 @@ jobs:
         run: |
           python3 << 'PYEOF'
           import json
-          import sys
+          import os
           from datetime import datetime, timezone
 
           today = datetime.now(timezone.utc).date()
@@ -59,10 +59,10 @@ jobs:
                       return False
               return True
 
-          # Filter active sponsors
           active_sponsors = [s for s in sponsors if is_active(s)]
+          print(f"Total sponsors: {len(sponsors)}")
+          print(f"Active sponsors: {len(active_sponsors)}")
 
-          # Group sponsors by tier
           tier_map = {t['id']: [] for t in tiers}
           for s in active_sponsors:
               if s['tier'] in tier_map:
@@ -92,7 +92,6 @@ jobs:
                       name = s.get('alt', s['name'])
                       url = s['url']
 
-                      # Dark/light mode aware logo
                       if 'logo_url_dark' in s and 'logo_url_light' in s:
                           img = (
                               f'<picture>'
@@ -139,7 +138,11 @@ jobs:
           with open('sponsor_section.html', 'w') as f:
               f.write(output)
 
-          print("::set-output name=section::" + output.replace('%', '%25').replace('\n', '%0A').replace('\r', '%0D'))
+          # Use GITHUB_OUTPUT instead of deprecated ::set-output
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write('section<<EOF\n')
+              f.write(output)
+              f.write('\nEOF\n')
           PYEOF
 
       - name: Update README in OwnPay repo
@@ -161,6 +164,8 @@ jobs:
 
           with open('README.md', 'w') as f:
               f.write(new_content)
+
+          print("README.md updated")
           PYEOF
 
       - name: Commit and push changes
@@ -175,4 +180,4 @@ jobs:
           fi
           git commit -m "chore: auto-update sponsors from sponsor.json [skip ci]"
           git push origin main
-          
+          echo "Changes pushed successfully"

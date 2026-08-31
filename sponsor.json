@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-08-31",
+  "cta": {
+    "url": "https://ownpay.org/donate",
+    "text": "Become a Sponsor"
+  },
+  "tiers": [
+    {
+      "id": "elite",
+      "name": "Elite Sponsor",
+      "min_amount_usd": 500,
+      "max_logos_per_row": 1,
+      "logo_height": 40
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum Sponsors",
+      "min_amount_usd": 250,
+      "max_logos_per_row": 2,
+      "logo_height": 35
+    },
+    {
+      "id": "gold",
+      "name": "Gold Sponsors",
+      "min_amount_usd": 100,
+      "max_logos_per_row": 3,
+      "logo_height": 30
+    },
+    {
+      "id": "community",
+      "name": "Community Sponsors",
+      "min_amount_usd": 25,
+      "max_logos_per_row": 6,
+      "logo_height": 28
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Namepart",
+      "url": "https://namepart.com",
+      "logo_url": "https://ownpay.org/assets/img/sponsors/namepart_logo.png",
+      "tier": "elite",
+      "alt": "Namepart — Powering open-source fintech infrastructure"
+    },
+    {
+      "name": "Hostever",
+      "url": "https://hostever.com",
+      "logo_url": "https://www.hostever.com/storage/2022/07/hostever-logo-black-white.svg",
+      "tier": "community",
+      "alt": "Hostever"
+    },
+    {
+      "name": "FlexoHost",
+      "url": "https://www.flexohost.com",
+      "logo_url": "https://ownpay.org/assets/img/sponsors/FlexoHost_logo.webp",
+      "tier": "community",
+      "alt": "FlexoHost"
+    },
+    {
+      "name": "Hostazy",
+      "url": "https://hostazy.com.bd",
+      "logo_url": "https://ownpay.org/assets/img/sponsors/hostazy.png",
+      "tier": "community",
+      "alt": "Hostazy"
+    },
+    {
+      "name": "Bangla Hoster",
+      "url": "https://banglahoster.net",
+      "logo_url": "https://ownpay.org/assets/img/sponsors/banglahoster.svg",
+      "tier": "community",
+      "alt": "Bangla Hoster"
+    },
+    {
+      "name": "HostSite24",
+      "url": "https://hostsite24.com",
+      "logo_url": "https://ownpay.org/assets/img/sponsors/hostsite24.png",
+      "tier": "community",
+      "alt": "HostSite24"
+    },
+    {
+      "name": "Rayan Hoster",
+      "url": "https://www.rayanhoster.com",
+      "logo_url": "https://res.cloudinary.com/dvj5lfwjf/image/upload/v1780857381/rayanhoster/uvfas9pobgpxubxkinrr.png",
+      "tier": "community",
+      "alt": "Rayan Hoster"
+    }
+  ]
+}

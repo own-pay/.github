@@ -1,0 +1,178 @@
+name: Sync Sponsors to README
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sponsor.json'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout .github repo
+        uses: actions/checkout@v6
+        with:
+          path: dotgithub
+
+      - name: Checkout OwnPay repo
+        uses: actions/checkout@v6
+        with:
+          repository: own-pay/OwnPay
+          token: ${{ secrets.OWNPAY_REPO_TOKEN }}
+          path: ownpay
+
+      - name: Generate sponsor HTML
+        id: generate
+        run: |
+          python3 << 'PYEOF'
+          import json
+          import sys
+          from datetime import datetime, timezone
+
+          today = datetime.now(timezone.utc).date()
+
+          with open('dotgithub/sponsor.json') as f:
+              data = json.load(f)
+
+          tiers = data['tiers']
+          sponsors = data['sponsors']
+          cta = data['cta']
+
+          def is_active(s):
+              start = s.get('start_date')
+              end = s.get('end_date')
+              if start:
+                  start_d = datetime.strptime(start, '%Y-%m-%d').date()
+                  if today < start_d:
+                      return False
+              if end:
+                  end_d = datetime.strptime(end, '%Y-%m-%d').date()
+                  if today > end_d:
+                      return False
+              return True
+
+          # Filter active sponsors
+          active_sponsors = [s for s in sponsors if is_active(s)]
+
+          # Group sponsors by tier
+          tier_map = {t['id']: [] for t in tiers}
+          for s in active_sponsors:
+              if s['tier'] in tier_map:
+                  tier_map[s['tier']].append(s)
+
+          lines = []
+          lines.append('<div align="center">')
+          lines.append('')
+
+          has_any = False
+          for tier in tiers:
+              tier_sponsors = tier_map.get(tier['id'], [])
+              if not tier_sponsors:
+                  continue
+              has_any = True
+
+              lines.append(f'### {tier["name"]}')
+              lines.append('')
+
+              max_per_row = tier['max_logos_per_row']
+              height = tier['logo_height']
+
+              for i in range(0, len(tier_sponsors), max_per_row):
+                  row = tier_sponsors[i:i + max_per_row]
+                  row_parts = []
+                  for s in row:
+                      name = s.get('alt', s['name'])
+                      url = s['url']
+
+                      # Dark/light mode aware logo
+                      if 'logo_url_dark' in s and 'logo_url_light' in s:
+                          img = (
+                              f'<picture>'
+                              f'<source media="(prefers-color-scheme: dark)" srcset="{s["logo_url_dark"]}">'
+                              f'<source media="(prefers-color-scheme: light)" srcset="{s["logo_url_light"]}">'
+                              f'<img src="{s["logo_url_light"]}" height="{height}" alt="{name}">'
+                              f'</picture>'
+                          )
+                      elif 'logo_url_dark' in s:
+                          img = (
+                              f'<picture>'
+                              f'<source media="(prefers-color-scheme: dark)" srcset="{s["logo_url_dark"]}">'
+                              f'<img src="{s["logo_url_dark"]}" height="{height}" alt="{name}">'
+                              f'</picture>'
+                          )
+                      elif 'logo_url_light' in s:
+                          img = (
+                              f'<picture>'
+                              f'<source media="(prefers-color-scheme: light)" srcset="{s["logo_url_light"]}">'
+                              f'<img src="{s["logo_url_light"]}" height="{height}" alt="{name}">'
+                              f'</picture>'
+                          )
+                      else:
+                          img = f'<img src="{s["logo_url"]}" height="{height}" alt="{name}">'
+
+                      row_parts.append(f'<a href="{url}" target="_blank" rel="noopener noreferrer">{img}</a>')
+
+                  lines.append('&nbsp;&nbsp;&nbsp;&nbsp;'.join(row_parts))
+                  lines.append('')
+
+              lines.append('<br>')
+              lines.append('')
+
+          if not has_any:
+              lines.append('<p><em>No active sponsors at this time.</em></p>')
+              lines.append('')
+
+          lines.append(f'<sub>Want your logo here? <a href="{cta["url"]}"><b>{cta["text"]}</b></a></sub>')
+          lines.append('')
+          lines.append('</div>')
+
+          output = '\n'.join(lines)
+
+          with open('sponsor_section.html', 'w') as f:
+              f.write(output)
+
+          print("::set-output name=section::" + output.replace('%', '%25').replace('\n', '%0A').replace('\r', '%0D'))
+          PYEOF
+
+      - name: Update README in OwnPay repo
+        run: |
+          cd ownpay
+          python3 << 'PYEOF'
+          import re
+
+          with open('../sponsor_section.html') as f:
+              new_section = f.read()
+
+          with open('README.md') as f:
+              content = f.read()
+
+          pattern = r'(<!-- SPONSORS-START -->).*?(<!-- SPONSORS-END -->)'
+          replacement = f'<!-- SPONSORS-START -->\n<!-- This section is auto-generated. Do not edit manually. -->\n<!-- Edit sponsor.json in the own-pay/.github repo to update. -->\n\n{new_section}\n<!-- SPONSORS-END -->'
+
+          new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+          with open('README.md', 'w') as f:
+              f.write(new_content)
+          PYEOF
+
+      - name: Commit and push changes
+        run: |
+          cd ownpay
+          git config user.name "OwnPay Bot"
+          git config user.email "bot@ownpay.org"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: auto-update sponsors from sponsor.json [skip ci]"
+          git push origin main
+          

@@ -38,52 +38,60 @@
   "sponsors": [
     {
       "name": "Namepart",
-      "url": "https://namepart.com",
+      "url": "https://namepart.com/aff.php?aff=268",
       "logo_url": "https://ownpay.org/assets/img/sponsors/namepart_logo.png",
       "tier": "elite",
-      "alt": "Namepart — Powering open-source fintech infrastructure"
+      "alt": "Namepart - Powering open-source fintech infrastructure",
+      "start_date": "2026-05-29"
     },
     {
       "name": "Hostever",
-      "url": "https://hostever.com",
-      "logo_url": "https://www.hostever.com/storage/2022/07/hostever-logo-black-white.svg",
-      "tier": "community",
-      "alt": "Hostever"
+      "url": "https://portal.hostever.com/aff.php?aff=1882",
+      "logo_url_dark": "https://www.hostever.com/storage/2022/07/hostever-logo-white.svg",
+      "logo_url_light": "https://www.hostever.com/storage/2022/07/hostever-logo-black.svg",
+      "tier": "platinum",
+      "alt": "Hostever",
+      "start_date": "2026-07-13"
     },
     {
       "name": "FlexoHost",
-      "url": "https://www.flexohost.com",
+      "url": "https://client.flexohost.com/aff.php?aff=19",
       "logo_url": "https://ownpay.org/assets/img/sponsors/FlexoHost_logo.webp",
       "tier": "community",
-      "alt": "FlexoHost"
+      "alt": "FlexoHost",
+      "start_date": "2026-04-24"
     },
     {
       "name": "Hostazy",
-      "url": "https://hostazy.com.bd",
+      "url": "https://hostazy.com.bd/aff.php?aff=7",
       "logo_url": "https://ownpay.org/assets/img/sponsors/hostazy.png",
       "tier": "community",
-      "alt": "Hostazy"
+      "alt": "Hostazy",
+      "start_date": "2026-07-04"
     },
     {
       "name": "Bangla Hoster",
       "url": "https://banglahoster.net",
       "logo_url": "https://ownpay.org/assets/img/sponsors/banglahoster.svg",
       "tier": "community",
-      "alt": "Bangla Hoster"
+      "alt": "Bangla Hoster",
+      "start_date": "2026-07-01"
     },
     {
       "name": "HostSite24",
       "url": "https://hostsite24.com",
       "logo_url": "https://ownpay.org/assets/img/sponsors/hostsite24.png",
       "tier": "community",
-      "alt": "HostSite24"
+      "alt": "HostSite24",
+      "start_date": "2026-05-31"
     },
     {
       "name": "Rayan Hoster",
       "url": "https://www.rayanhoster.com",
       "logo_url": "https://res.cloudinary.com/dvj5lfwjf/image/upload/v1780857381/rayanhoster/uvfas9pobgpxubxkinrr.png",
       "tier": "community",
-      "alt": "Rayan Hoster"
+      "alt": "Rayan Hoster",
+      "start_date": "2026-07-16"
     }
   ]
 }

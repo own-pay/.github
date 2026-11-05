@@ -58,7 +58,7 @@ A plugins directory of payment gateway adapters and add-ons — covering global 
 <tr>
 <td width="50%" valign="top">
 
-### 📱 Mobile Companion App
+### 📱 [Mobile Companion App](https://github.com/own-pay/OwnPay-Mobile-App/releases/latest)
 A Flutter-based companion app for merchants — device pairing, JWT auth, real-time transaction monitoring, and SMS verification. General availability coming with v1.0.
 
 </td>
